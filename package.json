@@ -1,0 +1,48 @@
+{
+  "name": "weiqi-engine",
+  "version": "1.0.1",
+  "description": "A TypeScript Go (Weiqi) engine library, ready for npm publish.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nesharp/weiqi-engine.git"
+  },
+  "keywords": [
+    "weiqi",
+    "go",
+    "typescript",
+    "engine",
+    "library"
+  ],
+  "author": "Mykhail Nesteruk",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "typescript": "^5.5.4",
+    "vite": "^7.0.5",
+    "vitest": "^3.2.4",
+    "typescript-eslint": "^8.37.0"
+  }
+}
